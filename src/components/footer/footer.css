@@ -1,0 +1,9 @@
+#footerstyle {
+  height: 64px;
+  color: rgb(173, 177, 175);
+  margin-top: 3px;
+  background-color: rgb(17, 85, 74);
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
