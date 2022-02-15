@@ -3,13 +3,13 @@ import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import Tours from "../tours/Tours";
 
-import data from "../../data/db.json";
+// import data from "../../data/db.json";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <>
       <Header />
-      <Tours data={data.data} />
+      <Tours data={props.db} />
       <Footer />
     </>
   );

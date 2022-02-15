@@ -3,13 +3,12 @@ import "./Tours.css";
 import Tour from "./tour/Tour";
 import React from "react";
 import { Link } from "react-router-dom";
-import data from "../../data/db.json";
 
-export default function Tours(tour) {
-  console.log(tour);
+export default function Tours(tourss) {
+  console.log(tourss);
   return (
     <>
-      {tour.data.map((object) => {
+      {tourss.data.map((object) => {
         console.log(object);
         return (
           <div key={object.id}>
