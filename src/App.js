@@ -2,7 +2,6 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/home/home";
 import TourDetails from "./components/TourDetails/TourDetails";
-import Tours from "./components/tours/Tours";
 import Navbar from "./components/Navbar/Navbar";
 const travel = require("./data/db.json");
 
@@ -14,10 +13,7 @@ export default function App() {
       <h1>Welcome to React Router!</h1>
       <Routes>
         <Route path="/" element={<Home data={travel} />} />
-        <Route
-          path="/TourDetails/:id"
-          element={<TourDetails data={travel} />}
-        />
+        <Route path="/city/:id" element={<TourDetails data={travel} />} />
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </>
