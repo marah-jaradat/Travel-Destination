@@ -1,4 +1,5 @@
-export default function Tour(props) {
+function Tours(props) {
+  console.log(props);
   return (
     <>
       <h1>Tours: </h1>
@@ -13,3 +14,5 @@ export default function Tour(props) {
     </>
   );
 }
+
+export default Tours;
