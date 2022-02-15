@@ -14,7 +14,7 @@ export default function App() {
       <h1>Welcome to React Router!</h1>
       <Routes>
         <Route path="/" element={<Home data={travel} />} />
-        <Route path="/city/:id" element={<TourDetails data={travel} />} />
+        <Route path="/tour/:id" element={<TourDetails data={travel} />} />
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </>
