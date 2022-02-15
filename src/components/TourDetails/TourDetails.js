@@ -5,13 +5,16 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 
 export default function TourDetails(props) {
-  const [showMore, setinfo] = useState(false);
+  const [showMore, setShowMore] = useState(false);
   function clickhandle() {
-    setinfo(!showMore);
+    setShowMore(!showMore);
   }
 
   // console.log(props.data);
   return (
+
+    <button onClick={()=> setShowMore(!showMore)}>
+      /button>}
     <>
       <Header />
       <Footer />
