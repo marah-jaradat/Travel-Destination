@@ -1,6 +1,7 @@
+
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/home/Home";
+import Home from "./components/Home";
 import TourDetails from "./components/TourDetails/TourDetails";
 import Navbar from "./components/Navbar/Navbar";
 import travel from "./data/db.json";
