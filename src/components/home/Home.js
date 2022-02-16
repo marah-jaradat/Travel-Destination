@@ -9,7 +9,7 @@ export default function Home(props) {
   return (
     <>
       <Header />
-      <Tours data={props.db} />
+      <Tours data={props.data} />
       <Footer />
     </>
   );

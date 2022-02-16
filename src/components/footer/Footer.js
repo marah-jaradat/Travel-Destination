@@ -5,8 +5,8 @@ export default function Footer() {
       <div id="footerstyle">
         <a href="url">FaceBook</a>
         <a href="url">Instagam</a>
-        <p>The auther: Marah Jaradat</p>
       </div>
+      <p id="Ma">The auther: Marah Jaradat</p>
     </>
   );
 }

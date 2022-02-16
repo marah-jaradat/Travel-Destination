@@ -11,9 +11,9 @@ export default function Tours(tourss) {
       {tourss.data.map((object) => {
         console.log(object);
         return (
-          <div key={object.id}>
+          <div>
             <Link to={`/tour/${object.id}`}>
-              <Tour key={object.id} />
+              <Tour tour={object} />
             </Link>
           </div>
         );
