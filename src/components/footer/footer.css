@@ -1,9 +1,19 @@
 #footerstyle {
-  height: 64px;
+  height: 30px;
   color: rgb(173, 177, 175);
-  margin-top: 3px;
+  margin-top: 6px;
   background-color: rgb(17, 85, 74);
   display: flex;
-  justify-content: center;
+  justify-content: left;
   font-size: 18px;
+}
+
+#Ma {
+  height: 30px;
+  color: rgb(173, 177, 175);
+  margin-top: 1px;
+  display: flex;
+  justify-content: right;
+  font-size: 18px;
+  background-color: rgb(17, 85, 74);
 }

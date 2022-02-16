@@ -4,30 +4,34 @@ import Footer from "../footer/Footer";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 
-export default function TourDetails(props) {
-  let { id } = { useParams };
+// export default function TourDetails(props) {
 
-  const getTourData = () => {
-    let lol = props.data.db;
-    const filterDaa = lol.filter((data) => data.id === id);
-    return filterDaa;
-  };
-  const filterDaa = getTourData();
+const TourDetails = (props) => {
+  let { id } = useParams();
+  console.log(333, id);
+
+  function getTourData() {
+    let lol = props.data;
+    const dataOfTour = lol.filter((data) => data.id === id);
+    return dataOfTour;
+  }
+  const dataOfTour = getTourData();
   const [showMore, setShowMore] = useState(false);
   return (
     <div>
+      <h2>{dataOfTour[0].name}</h2>
+
       <p>
         {showMore
-          ? filterDaa[0].info
-          : `${filterDaa[0].info.substring(0, 200)}...`}
+          ? dataOfTour[0].info
+          : `${dataOfTour[0].info.substring(0, 200)}...`}
         <button onClick={() => setShowMore(!showMore)}>
           {showMore ? "show less" : "show more"}
         </button>
       </p>
-      <div>Price: {filterDaa[0].price}</div>
-      <Header />
-      <Footer />
+      <img src={dataOfTour[0].image} />
+      <div>Price: {dataOfTour[0].price}</div>
     </div>
   );
-}
-// export default TourDetails
+};
+export default TourDetails;
