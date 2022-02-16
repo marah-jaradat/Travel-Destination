@@ -8,7 +8,7 @@ export default function TourDetails(props) {
   let { id } = { useParams };
 
   const getTourData = () => {
-    let lol = data.data;
+    let lol = props.data.db;
     const filterDaa = lol.filter((data) => data.id === id);
     return filterDaa;
   };
@@ -16,7 +16,6 @@ export default function TourDetails(props) {
   const [showMore, setShowMore] = useState(false);
   return (
     <div>
-      <h2></h2>
       <p>
         {showMore
           ? filterDaa[0].info

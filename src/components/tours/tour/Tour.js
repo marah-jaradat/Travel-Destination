@@ -4,8 +4,8 @@ import React from "react";
 const Tour = ({ tour }) => {
   return (
     <div>
-      {/* <h2 id="name">{tour.name}</h2> */}
-      {/* <img src={tour.image} alt="tour" /> */}
+      <h2 id="name">{tour.name}</h2>
+      <img src={tour.image} alt="tour" />
     </div>
   );
 };
